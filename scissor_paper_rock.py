@@ -3,9 +3,10 @@ import random
 choice = ["scissor", "paper", "rock"]
 print("ENTER:\nSCISSOR\nPAPER\nROCK\n-1 TO QUIT ")
 def game():
-    for i in range(0, 10000000):
+    i = 1
+    while True:
         
-        print(f"Round {i+1}")
+        print(f"Round {i}")
         player = (input("Your turn: ")).lower()
         
         if player == "-1":
@@ -27,6 +28,7 @@ def game():
             
             else: 
                 print("You loose. Better luck next time.")
-
+                
+        i += 1
 game()
                 
